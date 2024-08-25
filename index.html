@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Расширение Smarty Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="container">
+    <h2 class="title">Расширение Smarty-tabs</h2>
+
+    <p class="subtitle">Авторизуйтесь</p>
+    <form id="loginForm" class="auth-form">
+
+            <label for="mail">
+                <input type="text" id="mail" placeholder="Введите Email" class="auth-form__input">
+            </label>
+
+            <label for="password">
+                <input type="password" id="password" placeholder="Введите пароль" class="auth-form__input">
+            </label>
+
+            <button type="submit" id="submitBtn">Войти</button>
+    </form>
+</section>
+
+<!-- подключаем скрипт, который обработает нажатие на эту кнопку -->
+<script src="auth.js"></script>
+</body>
+</html>
