@@ -19,11 +19,20 @@
     }
   },
   "permissions": ["activeTab", "scripting", "storage"],
+  "web_accessible_resources": [
+    {
+      "resources": ["utils/customFetch.js", "auth.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "content_scripts": [
     {
       "matches": [ "<all_urls>" ],
-      "js": [ "auth.js" ]
+      "js": [ "auth.js", "customFetch.js" ]
     }
   ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
   "devtools_page": "devtools.html"
 }

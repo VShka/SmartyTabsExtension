@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сохранение ссылок - Smarty Tabs</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<section class="container">
+    <h2 class="title">Сохранение ссылки</h2>
+
+    <!-- Селектор категории -->
+    <label for="category">Выберите категорию:</label>
+    <select id="category" class="form-select">
+        <!-- Здесь будут динамически добавляться категории -->
+    </select>
+
+    <!-- Селектор подкатегории -->
+    <label for="subcategory">Выберите подкатегорию:</label>
+    <select id="subcategory" class="form-select">
+        <option value="project">Проект</option>
+        <option value="task">Задача</option>
+        <option value="research">Исследование</option>
+    </select>
+
+    <!-- Поле ввода ссылки -->
+    <label for="url">Введите ссылку:</label>
+    <input type="url" id="url" placeholder="https://example.com" class="form-input" required>
+
+    <!-- Поле ввода описания -->
+    <label for="description">Описание:</label>
+    <textarea id="description" placeholder="Введите описание..." class="form-textarea"></textarea>
+
+    <!-- Кнопка для сохранения -->
+    <button id="saveBtn">Сохранить</button>
+
+    <!-- Поле для вывода сообщений -->
+    <p id="message"></p>
+</section>
+
+<!-- Подключаем скрипт для обработки -->
+<script type="module" src="api.js"></script>
+<script type="module" src="./utils/customFetch.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
