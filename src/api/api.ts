@@ -1,4 +1,4 @@
-import {customFetch} from './utils/customFetch'
+import {customFetch} from '../utils/customFetch'
 const BASE_URL = 'https://smarty-tabs-3a031b6e2201.herokuapp.com/api/v1'
 const AUTH_REFRESH_ENDPOINT = 'auth/refresh'
 const CATEGORY_ENDPOINT = '/user/titles'

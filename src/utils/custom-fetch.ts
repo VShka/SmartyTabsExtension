@@ -1,4 +1,4 @@
-import {refreshAuthToken} from "../api";
+import {refreshAuthToken} from "../api/api";
 
 const BASE_URL = 'https://smarty-tabs-3a031b6e2201.herokuapp.com/api/v1'
 
@@ -42,7 +42,7 @@ export const customFetch = async (url, options = {}) => {
                 } catch (e) {
                     processQueue(e, null);
                     chrome.storage.sync.clear()
-                    window.location.href = '../index.html'
+                    window.location.href = '../../index.html'
                     throw e
                 } finally {
                     isRefreshing = false

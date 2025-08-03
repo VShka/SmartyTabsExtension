@@ -1,4 +1,4 @@
-import { getCategories } from './api.js'
+import { getCategories } from './src/api/api.ts'
 chrome.storage.sync.get("authToken", (result) => {
     let token = result.authToken
 
